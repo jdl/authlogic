@@ -4,11 +4,11 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "authlogic"
+    gem.name = "jdl-authlogic"
     gem.summary = "A clean, simple, and unobtrusive ruby authentication solution."
     gem.email = "bjohnson@binarylogic.com"
-    gem.homepage = "http://github.com/binarylogic/authlogic"
-    gem.authors = ["Ben Johnson of Binary Logic"]
+    gem.homepage = "http://github.com/jdl/authlogic"
+    gem.authors = ["Ben Johnson of Binary Logic (simple Sinatra-related bugfix by JDL in this fork)"]
     gem.add_dependency "activesupport"
   end
   Jeweler::GemcutterTasks.new

@@ -4,12 +4,12 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{authlogic}
+  s.name = %q{jdl-authlogic}
   s.version = "2.1.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Ben Johnson of Binary Logic"]
-  s.date = %q{2010-08-04}
+  s.authors = ["Ben Johnson of Binary Logic (simple Sinatra-related bugfix by JDL in this fork)"]
+  s.date = %q{2010-09-22}
   s.email = %q{bjohnson@binarylogic.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION.yml",
-     "authlogic.gemspec",
      "generators/session/session_generator.rb",
      "generators/session/templates/session.rb",
      "init.rb",
