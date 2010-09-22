@@ -1,3 +1,21 @@
+= Changes in this fork.
+Very simply, this is a fork of authlogic 2.1.6 that fixes a bug in the sinatra_adapter. I didn't change anything else 
+related to the core functionality of authlogic. The symptoms of the bug are as follows.
+
+You are running:
+* Rails 2.3.*
+* authlogic for some regular controllers
+* Sinatra from the metal directory, but not using authlogic for any of those classes
+* Builder
+
+What happens is that even though you don't care about using authlogic in your Sinatra classes, the use of Builder 
+ultimately triggers the code that checks for the existence of the Sinatra class, which causes authlogic to load 
+its adapter. The adapter is trying to inlcude itself into Sinatra::Request, when it should be using Sinatra::Base.
+
+WARNING: I have no idea if authlogic actually works with Sinatra, because I don't care if it does or not. I just wanted
+my app to stop exploding during boot. I'm using authlogic for my Rails controllers, not my Sinatra classes.
+
+
 = Authlogic
 
 Authlogic is a clean, simple, and unobtrusive ruby authentication solution.

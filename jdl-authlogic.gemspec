@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{jdl-authlogic}
-  s.version = "2.1.6.1"
+  s.version = "2.1.6.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ben Johnson of Binary Logic (simple Sinatra-related bugfix by JDL in this fork)"]
@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
      "generators/session/session_generator.rb",
      "generators/session/templates/session.rb",
      "init.rb",
+     "jdl-authlogic-2.1.6.1.gem",
      "jdl-authlogic-2.1.6.gem",
      "jdl-authlogic.gemspec",
      "lib/authlogic.rb",
